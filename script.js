@@ -17,3 +17,14 @@ function divide(a, b) {
 function operate(func, a, b) {
     return func(a, b);
 }
+
+function displayIt(text) {
+    return console.log(text.textContent)
+}
+
+const ones = document.querySelector('one');
+console.log(ones.textContent);
+
+
+
+
