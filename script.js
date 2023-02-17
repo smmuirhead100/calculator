@@ -18,13 +18,14 @@ function operate(func, a, b) {
     return func(a, b);
 }
 
-function displayIt(text) {
-    return console.log(text.textContent)
+function displayIt(yes) {
+    console.log(yes);
 }
 
-const ones = document.querySelector('one');
-console.log(ones.textContent);
+const buttons = document.querySelectorAll('button');
 
-
-
-
+for (i = 0; i < buttons.length; i ++) {
+    buttons[i].addEventListener("click", function (e) {
+        console.log(e);
+    });
+}
