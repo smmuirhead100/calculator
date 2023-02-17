@@ -1,3 +1,5 @@
+const display = document.querySelector('.display');
+
 function add(a, b) {
     return a + b;
 }
@@ -19,7 +21,11 @@ function operate(func, a, b) {
 }
 
 function displayIt(text) {
-    console.log(text);
+    let items = display.textContent;
+    let selected = text;
+    items = items + ' ' + selected;
+    display.textContent = items;
+    console.log(items);
 }
 
 const buttons = document.querySelectorAll('button');
